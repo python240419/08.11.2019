@@ -1,0 +1,72 @@
+<html>
+<head>
+    <!-- all page declarations -->
+    <title>My first HTML page</title>
+    <link href="mystyle.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">    
+</head>
+<body>
+    <!-- second way style tag -->
+    <style>
+        body {
+            margin-left: 10px
+        }
+        h1, h3 {
+            color:green;
+            font-weight: bold
+        }
+
+        .myblue:hover {
+            color:yellow;
+            border:2px solid Tomato;
+            font-family: 'Sofia'
+        }
+        .myblue {
+            color:blue;
+            border:2px solid Tomato;
+            font-family: 'Sofia'
+        }     
+        
+    </style>
+    <!-- &nbsp is space br: break line-->
+    <p>
+        <p><b>Hello paragraph!</b></p>
+        <h2>I am h2</h2>
+        <h2>I am h3</h2>
+        <!-- first way : inline style="..." -->
+        <p style="color:red;font-weight: bold">Hello paragraph!</p>
+        <p class="myblue">blue paragraph!</p>
+        
+        <table border="1" style="border:1px blue">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AVI</td>
+            </tr>
+            <tr>
+                    <td>2</td>
+                    <td>SHALOM</td>
+                </tr>            
+        </table>
+        <br />
+        <p>    Button with Bootstrap:    
+             <button class="btn btn-info">button1</button>  info </p>
+             <button class="btn btn-success">button1</button>  info </p>
+        <form>
+            <p>ID <input type="number" required/></p>
+            <p>NAME <input type="text" placeholder="ENTER YOUR NAME"
+                class="form-control" width="400"/></p>
+            <p>BIRTH DATE <input type="date" /></p>
+            <p>PASSWORD <input type="password" /></p>
+            <p>EMAIL <input type="email" required /></p>
+            <button type="submit">DONE</button>
+        </form> 
+
+</body>
+</html>
